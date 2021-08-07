@@ -3,7 +3,7 @@
 
 ## Installation 
 ```sh
-wget -qO - https://github.com/asurraa/scripts/blob/master/compile-build-date/out/compile-build-date
+https://raw.githubusercontent.com/asurraa/scripts/master/compile-build-date/out/compile-build-date
 
 ```
 
