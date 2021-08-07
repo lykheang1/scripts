@@ -1,4 +1,4 @@
-# COMPILE BUILD DATE
+# compile-build-date
 
 
 ## Installation 
