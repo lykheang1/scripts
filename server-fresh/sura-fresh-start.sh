@@ -12,9 +12,9 @@ fi
 sudo apt-get update && sudo apt-get upgrade -y
 
 # install essential software 
-sudo apt-get install zsh wget curl 
+sudo apt-get install zsh wget curl -y 
 snap install docker
-sudo apt-get install nginx 
+sudo apt-get install nginx -y 
 
 
 # install zsh 
