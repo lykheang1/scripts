@@ -37,3 +37,6 @@ sudo apt-get install neofetch
 sudo npm install -g yarn 
 sudo npm install -g pm2 
 sudo npm install -g pnpm
+
+mkdir projects 
+mkdir temps 
