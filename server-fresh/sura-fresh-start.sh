@@ -21,3 +21,12 @@ sudo apt-get install nginx -y
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo apt-get install zsh-autosuggestions -y
 
+# append zsh-auto suggestion in config file
+sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/' .zshrc
+
+# install nodejs 
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+snap install bpytop
+sudo apt-get install neofetch 
