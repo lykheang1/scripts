@@ -33,3 +33,7 @@ sudo apt-get install -y nodejs
 
 snap install bpytop
 sudo apt-get install neofetch 
+
+sudo npm install -g yarn 
+sudo npm install -g pm2 
+sudo npm install -g pnpm
