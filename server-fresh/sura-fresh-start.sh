@@ -21,10 +21,11 @@ sudo apt-get install nginx -y
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # append zsh-auto suggestion in config file
 sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/' .zshrc
 chsh -s $(which zsh)
+
 
 # install nodejs 
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
