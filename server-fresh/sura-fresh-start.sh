@@ -13,8 +13,21 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 # install essential software 
 sudo apt-get install zsh wget curl -y 
-snap install docker
+sudo apt-get update
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+    sudo mkdir -p /etc/apt/keyrings
+
 sudo apt-get install nginx -y 
+
+snap install bpytop
+sudo apt-get install neofetch 
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 
 # install zsh 
@@ -27,16 +40,16 @@ sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/' .zshrc
 chsh -s $(which zsh)
 
 
-# install nodejs 
+# install nodejs & node stuff
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
-
-snap install bpytop
-sudo apt-get install neofetch 
 
 sudo npm install -g yarn 
 sudo npm install -g pm2 
 sudo npm install -g pnpm
 
+# init base folder 
 mkdir projects 
 mkdir temps 
+
+

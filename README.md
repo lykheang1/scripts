@@ -15,3 +15,9 @@
 | Name                                                                                    | Description                                                               |
 | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | [compile-build-date](https://github.com/asurraa/scripts/tree/master/compile-build-date) | compile the last build date time everything you run or build your project |
+| [fresh-script](https://github.com/asurraa/scripts/tree/master/server-fresh)             | auto setting up new vm                                                    |
+
+## Maintenance
+
+- Leekheng
+- Lyhour
