@@ -23,21 +23,12 @@ sudo apt-get install \
 
 sudo apt-get install nginx -y 
 
-snap install bpytop
-sudo apt-get install neofetch 
+snap install bpytop -y
+sudo apt-get install neofetch -y
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
-
-# install zsh 
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-# append zsh-auto suggestion in config file
-sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/' .zshrc
-chsh -s $(which zsh)
 
 
 # install nodejs & node stuff
@@ -51,5 +42,15 @@ sudo npm install -g pnpm
 # init base folder 
 mkdir projects 
 mkdir temps 
+
+# install zsh 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# append zsh-auto suggestion in config file
+sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/' .zshrc
+chsh -s $(which zsh)
+
 
 
