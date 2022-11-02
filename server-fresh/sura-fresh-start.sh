@@ -26,11 +26,11 @@ sudo apt-get install nginx -y
 snap install bpytop -y
 sudo apt-get install neofetch -y
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 
 
+
+sudo apt install certbot python3-certbot-nginx -y 
 # install nodejs & node stuff
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -52,5 +52,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # append zsh-auto suggestion in config file
 sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/' .zshrc
 chsh -s $(which zsh)
+
+sudo apt-get update -y 
+sudo apt-get install docker.io
 
 
