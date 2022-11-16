@@ -22,14 +22,9 @@ sudo apt-get install \
     sudo mkdir -p /etc/apt/keyrings
 
 sudo apt-get install nginx -y 
-
-snap install bpytop -y
+sudo pip3 install bpytop -y
 sudo apt-get install neofetch -y
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-
-
+sudo apt install docker.io -y
 
 # install nodejs & node stuff
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
